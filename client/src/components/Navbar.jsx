@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <header className="nav">
       <Link to="/" className="brand">
-        Poll
+        PulseBoard
       </Link>
       <nav className="nav-links">
         {isAuthenticated ? (
@@ -16,7 +16,7 @@ export default function Navbar() {
               My polls
             </NavLink>
             <NavLink to="/app/polls/new">New poll</NavLink>
-            <span className="nav-user muted">{user?.name}</span>
+            <span className="nav-user">{user?.name}</span>
             <button type="button" className="btn btn-ghost" onClick={() => logout()}>
               Log out
             </button>
