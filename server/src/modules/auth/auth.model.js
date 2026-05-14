@@ -23,13 +23,9 @@ const userSchema = mongoose.Schema({
 
     },
     
-    isVerified:{
-        type:Boolean,
-        default:false 
-    },
-    verificationToken:{
-        type:String,
-        select:false
+    isVerified: {
+        type: Boolean,
+        default: true,
     },
     refreshToken:{
         type:String,

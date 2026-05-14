@@ -22,7 +22,7 @@ export default function RegisterPage() {
         password,
         role: "customer",
       });
-      navigate("/verify", { replace: true });
+      navigate("/login", { replace: true });
     } catch (err) {
       setError(err.message || "Registration failed");
     } finally {
@@ -69,7 +69,7 @@ export default function RegisterPage() {
         </button>
       </form>
       <p className="muted">
-        After registering, verify your email using the token we send you, then you can log in.
+        You can log in right away after your account is created.
       </p>
       <p className="muted">
         Already registered? <Link to="/login">Log in</Link>

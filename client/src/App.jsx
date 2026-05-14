@@ -5,7 +5,6 @@ import ProtectedRoute from "./components/ProtectedRoute.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/RegisterPage.jsx";
-import VerifyPage from "./pages/VerifyPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import CreatePollPage from "./pages/CreatePollPage.jsx";
 import PollManagePage from "./pages/PollManagePage.jsx";
@@ -32,7 +31,6 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
-            <Route path="/verify" element={<VerifyPage />} />
             <Route
               path="/app"
               element={

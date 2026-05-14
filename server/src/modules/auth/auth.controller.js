@@ -54,11 +54,6 @@ const resetPass = async (req, res) => {
   ApiResponse.ok(res, "password Reset");
 };
 
-const verifyUser = async (req, res) => {
-  const user = await authService.verifyUser(req.params.id);
-  ApiResponse.ok(res, "User Verified", user);
-};
-
 const greetHello = async (req, res) => {
   const msg = await authService.greetHello();
   ApiResponse.ok(res, msg);
@@ -91,7 +86,6 @@ export {
   refresh,
   forgotPass,
   resetPass,
-  verifyUser,
   greetHello,
   oidc,
 };
