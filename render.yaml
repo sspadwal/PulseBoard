@@ -1,0 +1,19 @@
+# Blueprint for https://render.com — Web Service (Node)
+# Set MONGODB_URI, JWT_ACCESS_SECRET, and JWT_REFRESH_SECRET in the dashboard (or sync: false secrets).
+
+services:
+  - type: web
+    name: poll-app
+    runtime: node
+    rootDir: server
+    buildCommand: npm ci --prefix ../client && npm run build --prefix ../client && npm ci
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        sync: false
+      - key: JWT_REFRESH_SECRET
+        sync: false

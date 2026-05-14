@@ -1,0 +1,10 @@
+import BaseDto from '../../../common/dto/base.dto.js'
+import Joi from 'joi'
+class LoginDto extends BaseDto{
+    static schema=Joi.object({
+        email:Joi.string().email().lowercase().required(),
+        password:Joi.string().min(8).max(100).message("Password must be 8 char minimum").required(),
+    })
+}
+
+export default LoginDto;
