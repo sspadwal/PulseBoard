@@ -48,7 +48,7 @@ export default function HomePage() {
           <h1 className="home-title">Soft polls. Clear answers.</h1>
           <p className="home-lead">
             Build single-choice surveys, share one link, and lift the lid on results when you are
-            ready — all in a calm, tactile interface.
+            ready - all in a calm, tactile interface.
           </p>
           <div className="home-actions">
             {isAuthenticated ? (
@@ -100,7 +100,7 @@ export default function HomePage() {
           <div className="home-body">
             <h3>One link, every vote</h3>
             <p>
-              Each poll gets a share token. Paste it in chat, email, or slides — respondents tap,
+              Each poll gets a share token. Paste it in chat, email, or slides - respondents tap,
               pick, and submit.
             </p>
           </div>
@@ -112,7 +112,7 @@ export default function HomePage() {
           </div>
           <div className="home-body">
             <h3>Raised insights</h3>
-            <p>Bar summaries per question when you publish — easy to read at a glance.</p>
+            <p>Bar summaries per question when you publish - easy to read at a glance.</p>
           </div>
         </article>
 
@@ -135,15 +135,6 @@ export default function HomePage() {
             <p>Draft, activate, close, then publish results when the story is complete.</p>
           </div>
         </article>
-
-        <footer className="home-tile home-tile--footer">
-          <p className="small muted" style={{ margin: 0 }}>
-            Stack: React · Vite · Express · MongoDB
-          </p>
-          <p className="small muted" style={{ margin: 0, fontWeight: 700 }}>
-            Neumorphism UI
-          </p>
-        </footer>
       </section>
     </div>
   );
