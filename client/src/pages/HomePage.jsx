@@ -57,7 +57,7 @@ export default function HomePage() {
               </Link>
             ) : (
               <>
-                <Link className="btn btn-primary" to="/register">
+                <Link className="btn btn-primary no-hover" to="/register">
                   Get started
                 </Link>
                 <Link className="btn btn-ghost" to="/login">
@@ -87,7 +87,7 @@ export default function HomePage() {
               Open my polls
             </Link>
           ) : (
-            <Link className="btn btn-primary" to="/register">
+            <Link className="btn btn-primary no-hover" to="/register">
               Create free account
             </Link>
           )}

@@ -286,7 +286,7 @@ select:focus {
 }
 .btn:hover {
   text-decoration: none;
-  box-shadow: var(--neu-raise);
+  box-shadow: var(--neu-raise-sm);
 }
 .btn:active {
   box-shadow: var(--neu-inset-tight);
@@ -303,7 +303,7 @@ select:focus {
   box-shadow: 6px 6px 14px rgba(91, 124, 250, 0.45), -3px -3px 10px var(--neu-light);
 }
 .btn-primary:hover {
-  box-shadow: 8px 8px 18px rgba(91, 124, 250, 0.5), -2px -2px 8px var(--neu-light);
+  box-shadow: 6px 6px 14px rgba(91, 124, 250, 0.45), -3px -3px 10px var(--neu-light);
 }
 .btn-primary:active {
   box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -314,8 +314,13 @@ select:focus {
   color: var(--text-soft);
 }
 .btn-ghost:hover {
-  box-shadow: var(--neu-raise-sm);
-  color: var(--text);
+  box-shadow: none;
+  color: var(--text-soft);
+}
+.no-hover:hover {
+  box-shadow: inherit;
+  transform: none;
+  color: inherit;
 }
 .btn-small {
   padding: 0.28rem 0.55rem;
